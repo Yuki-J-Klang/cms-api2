@@ -12,4 +12,5 @@ WORKDIR /app
 
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
-CMD [ "rails","s" ]
+# CMD [ "rails","s" ]
+CMD [ "rails","s","-p","3001" ]
